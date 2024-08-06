@@ -1,0 +1,2 @@
+1. Remove header files before running the inliner on the test.c(input.c) code. 
+    Otherwise throws parsing error.

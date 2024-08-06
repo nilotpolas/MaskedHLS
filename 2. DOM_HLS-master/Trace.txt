@@ -1,0 +1,52 @@
+DFG generated for COMAR
+Dummy node added
+----------Nodes and edges------------
+2322
+4052
+-------------------------------------
+Max path weight 12
+useLineAlgo from set_source_sink_weight
+In here
+No of registers if added levelwise: 14987
+Execution Time
+--- 5.06922459602356 seconds ---
+(base) nilotpola@nilotpola-HP-ProDesk-600-G4-PCI-MT:~/Desktop/SujeetBTPRunningCodebase/Register-Balancing-main/2. DOM_HLS-master/src$ python3 main.py
+DFG generated for DOMAND
+Dummy node added
+----------Nodes and edges------------
+1308
+2402
+-------------------------------------
+Max path weight 4
+useLineAlgo from set_source_sink_weight
+In here
+No of registers if added levelwise: 4752
+Execution Time
+--- 2.2239041328430176 seconds ---
+(base) nilotpola@nilotpola-HP-ProDesk-600-G4-PCI-MT:~/Desktop/SujeetBTPRunningCodebase/Register-Balancing-main/2. DOM_HLS-master/src$ python3 main.py 
+DFG generated for HPC1
+Dummy node added
+----------Nodes and edges------------
+1668
+2942
+-------------------------------------
+Max path weight 6
+useLineAlgo from set_source_sink_weight
+In here
+No of registers if added levelwise: 6578
+Execution Time
+--- 2.9279866218566895 seconds ---
+(base) nilotpola@nilotpola-HP-ProDesk-600-G4-PCI-MT:~/Desktop/SujeetBTPRunningCodebase/Register-Balancing-main/2. DOM_HLS-master/src$ python3 main.py 
+DFG generated for HPC2
+Dummy node added
+----------Nodes and edges------------
+1884
+3122
+-------------------------------------
+Max path weight 6
+useLineAlgo from set_source_sink_weight
+In here
+No of registers if added levelwise: 8901
+Execution Time
+--- 2.781520128250122 seconds ---
+(base) nilotpola@nilotpola-HP-ProDesk-600-G4-PCI-MT:~/Desktop/SujeetBTPRunningCodebase/Register-Balancing-main/2. DOM_HLS-master/src$ 

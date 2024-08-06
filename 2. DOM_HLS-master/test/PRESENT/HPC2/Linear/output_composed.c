@@ -1,0 +1,76 @@
+
+void hpc2(_Bool a0_inp, _Bool a1_inp, _Bool b0_inp, _Bool b1_inp, _Bool r_inp, _Bool r_1_inp, _Bool *y0, _Bool *y1)
+{
+  _Bool u0;
+  _Bool u1;
+  _Bool i0;
+  _Bool i1;
+  _Bool v0;
+  _Bool v1;
+  _Bool p0;
+  _Bool p1;
+  _Bool p01;
+  _Bool p2;
+  _Bool p3;
+  _Bool p23;
+  _Bool a0_neg;
+  _Bool a1_neg;
+  _Bool u0_1;
+  _Bool u1_1;
+  _Bool i0_1;
+  _Bool i1_1;
+  _Bool v0_1;
+  _Bool v1_1;
+  _Bool p0_1;
+  _Bool p1_1;
+  _Bool p01_1;
+  _Bool p2_1;
+  _Bool p3_1;
+  _Bool p23_1;
+  _Bool a0_neg_1;
+  _Bool a1_neg_1;
+  _Bool a0_1;
+  _Bool a1_1;
+  _Bool a0;
+  _Bool a1;
+  _Bool b0;
+  _Bool b1;
+  _Bool r;
+  _Bool r_1;
+  a0 = a0_inp;
+  a1 = a1_inp;
+  b0 = b0_inp;
+  b1 = b1_inp;
+  r = r_inp;
+  r_1 = r_1_inp;
+  a0_neg = !a0;
+  a1_neg = !a1;
+  u0 = reg(a0_neg) & reg(r);
+  u1 = reg(a1_neg) & reg(r);
+  v0 = b0 ^ r;
+  v1 = b1 ^ r;
+  p0 = reg(a0) & reg(b0);
+  p1 = reg(a0) & reg(v1);
+  p01 = reg(u0) ^ reg(p1);
+  a0_1 = reg(p0) ^ p01;
+  p2 = reg(a1) & reg(b1);
+  p3 = reg(a1) & reg(v0);
+  p23 = reg(u1) ^ reg(p3);
+  a1_1 = reg(p2) ^ p23;
+  a0_neg_1 = !a0_1;
+  a1_neg_1 = !a1_1;
+  u0_1 = a0_neg_1 & reg(reg(r_1));
+  u1_1 = a1_neg_1 & reg(reg(r_1));
+  v0_1 = b0 ^ r_1;
+  v1_1 = b1 ^ r_1;
+  p0_1 = a0_1 & reg(reg(b0));
+  p1_1 = a0_1 & reg(reg(v1_1));
+  p01_1 = reg(u0_1) ^ reg(p1_1);
+  *y0 = reg(p0_1) ^ p01_1;
+  p2_1 = a1_1 & reg(reg(b1));
+  p3_1 = a1_1 & reg(reg(v0_1));
+  p23_1 = reg(u1_1) ^ reg(p3_1);
+  *y1 = reg(p2_1) ^ p23_1;
+}
+
+
